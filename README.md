@@ -1,7 +1,18 @@
 # MVP-N: A Dataset and Benchmark for Real-World Multi-View Object Classification (NeurIPS 2022)
 *This is the official PyTorch implementation.* [[paper]](https://openreview.net/forum?id=HYELrdRdJI)
 ## Create issues from this repository
-Please contact us at wangren@snu.ac.kr. We will reply within 3 days.
+Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
+## Summary of multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/17Kodhr031NVwxNeVQCLzAHu6W_tmgtRO/view?usp=share_link)  
+Period: 2015.01 ~ 2022.11  
+Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
+Journals: TPAMI, IJCV, TIP, TNNLS, TMM, TCSVT, TVCG, PR  
+Workshops: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV  
+
+**TODO**  
+- [ ] *2019.05* Deep multi-view learning using neuron-wise correlation-maximizing regularizers. (TIP)
+- [ ] *2022.10* HMTN: Hierarchical Multi-scale Transformer Network for 3D Shape Recognition. (MM)
+- [ ] *2022.11* Learning View-Based Graph Convolutional Network for Multi-View 3D Shape Analysis. (TPAMI)
+- [ ] *2022.12* OVPT: Optimal Viewset Pooling Transformer for 3D Object Recognition. (ACCV)
 ## Environment
 Ubuntu 20.04.3 LTS  
 Python 3.8.10  
