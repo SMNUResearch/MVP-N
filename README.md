@@ -3,13 +3,14 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Summary of 43 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/17Kodhr031NVwxNeVQCLzAHu6W_tmgtRO/view?usp=share_link)  
-Period: 2015.01 ~ 2022.11  
+Period: 2015.01 ~ 2022.12  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
 Journals: TPAMI, IJCV, TIP, TNNLS, TMM, TCSVT, TVCG, PR  
 Workshops: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV  
 
 **TODO**  
 - [ ] *2019.05* Deep multi-view learning using neuron-wise correlation-maximizing regularizers. (TIP)
+- [ ] *2020.06* End-to-End Learning Local Multi-view Descriptors for 3D Point Clouds. (CVPR)
 - [ ] *2022.10* HMTN: Hierarchical Multi-scale Transformer Network for 3D Shape Recognition. (MM)
 - [ ] *2022.11* Learning View-Based Graph Convolutional Network for Multi-View 3D Shape Analysis. (TPAMI)
 - [ ] *2022.12* OVPT: Optimal Viewset Pooling Transformer for 3D Object Recognition. (ACCV)
