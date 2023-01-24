@@ -2,17 +2,15 @@
 *This is the official PyTorch implementation.* [[paper]](https://openreview.net/forum?id=HYELrdRdJI)
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
-## Summary of 43 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/17Kodhr031NVwxNeVQCLzAHu6W_tmgtRO/view?usp=share_link)  
+## Update
+- *2023.01.25* Add MVFN [[weight]](https://drive.google.com/file/d/1tKUSXcMB5yNraFTm5bbx2__ygk9tbTIW/view?usp=share_link) and SMVCNN [[weight]](https://drive.google.com/file/d/1bV_ar0TC7YXRIAPUrHW83_ugn9No-nNS/view?usp=share_link). Code optimization.
+## Summary of 47 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1KF7voQuaDBoOXAz_E4_2gdY3xuvCoHpg/view?usp=share_link)  
 Period: 2015.01 ~ 2022.12  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
 Journals: TPAMI, IJCV, TIP, TNNLS, TMM, TCSVT, TVCG, PR  
 Workshops: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV  
 
 **TODO**  
-- [ ] *2019.05* Deep multi-view learning using neuron-wise correlation-maximizing regularizers. (TIP)
-- [ ] *2020.06* End-to-End Learning Local Multi-view Descriptors for 3D Point Clouds. (CVPR)
-- [ ] *2022.10* HMTN: Hierarchical Multi-scale Transformer Network for 3D Shape Recognition. (MM)
-- [ ] *2022.11* Learning View-Based Graph Convolutional Network for Multi-View 3D Shape Analysis. (TPAMI)
 - [ ] *2022.12* OVPT: Optimal Viewset Pooling Transformer for 3D Object Recognition. (ACCV)
 ## Environment
 Ubuntu 20.04.3 LTS  
@@ -67,7 +65,7 @@ python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=DAN
 python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=CVR
 
 # soft label
-python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=HPIQ -HPIQ=True
+python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=HPIQ
 python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=KD
 ```
 Training with other configurations
