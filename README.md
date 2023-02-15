@@ -3,15 +3,13 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Update
+- *2023.02.15* Add HS [[weight]](https://drive.google.com/file/d/1JODvl0oC64aN2clTCErdQz4bnY4Av2wn/view?usp=share_link). Code optimization.
 - *2023.01.25* Add MVFN [[weight]](https://drive.google.com/file/d/1tKUSXcMB5yNraFTm5bbx2__ygk9tbTIW/view?usp=share_link) and SMVCNN [[weight]](https://drive.google.com/file/d/1bV_ar0TC7YXRIAPUrHW83_ugn9No-nNS/view?usp=share_link). Code optimization.
-## Summary of 47 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1KF7voQuaDBoOXAz_E4_2gdY3xuvCoHpg/view?usp=share_link)  
+## Summary of 50 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1NryQBPcvdeOkwGXIsBlHqZ28J-fhrqPd/view?usp=share_link)  
 Period: 2015.01 ~ 2022.12  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
 Journals: TPAMI, IJCV, TIP, TNNLS, TMM, TCSVT, TVCG, PR  
 Workshops: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV  
-
-**TODO**  
-- [ ] *2022.12* OVPT: Optimal Viewset Pooling Transformer for 3D Object Recognition. (ACCV)
 ## Environment
 Ubuntu 20.04.3 LTS  
 Python 3.8.10  
