@@ -3,8 +3,7 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Update
-- *2023.02.22* Add the code for analyzing the utilization of informative views in the multi-view-based feature aggregation.  
-&emsp;&emsp;&emsp;&emsp;&emsp;Add SMVCNN [[weight]](https://drive.google.com/file/d/1-OzUCO9K_51wqCkL3Wdd3NXIv1HAYFmg/view?usp=share_link). Code optimization.
+- *2023.02.22* Add the code for analyzing the utilization of informative views in the multi-view-based feature aggregation. Add SMVCNN [[weight]](https://drive.google.com/file/d/1-OzUCO9K_51wqCkL3Wdd3NXIv1HAYFmg/view?usp=share_link). Code optimization.
 - *2023.02.15* Add HS [[weight]](https://drive.google.com/file/d/1JODvl0oC64aN2clTCErdQz4bnY4Av2wn/view?usp=share_link). Code optimization.
 - *2023.01.25* Add MVFN [[weight]](https://drive.google.com/file/d/1tKUSXcMB5yNraFTm5bbx2__ygk9tbTIW/view?usp=share_link). Code optimization.
 ## Summary of 50 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1NryQBPcvdeOkwGXIsBlHqZ28J-fhrqPd/view?usp=share_link)  
