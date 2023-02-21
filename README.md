@@ -3,8 +3,10 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Update
+- *2023.02.22* Add the code for analyzing the utilization of informative views in the multi-view-based feature aggregation.  
+&emsp;&emsp;&emsp;&emsp;&emsp;Add SMVCNN [[weight]](https://drive.google.com/file/d/1-OzUCO9K_51wqCkL3Wdd3NXIv1HAYFmg/view?usp=share_link). Code optimization.
 - *2023.02.15* Add HS [[weight]](https://drive.google.com/file/d/1JODvl0oC64aN2clTCErdQz4bnY4Av2wn/view?usp=share_link). Code optimization.
-- *2023.01.25* Add MVFN [[weight]](https://drive.google.com/file/d/1tKUSXcMB5yNraFTm5bbx2__ygk9tbTIW/view?usp=share_link) and SMVCNN [[weight]](https://drive.google.com/file/d/1bV_ar0TC7YXRIAPUrHW83_ugn9No-nNS/view?usp=share_link). Code optimization.
+- *2023.01.25* Add MVFN [[weight]](https://drive.google.com/file/d/1tKUSXcMB5yNraFTm5bbx2__ygk9tbTIW/view?usp=share_link). Code optimization.
 ## Summary of 50 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1NryQBPcvdeOkwGXIsBlHqZ28J-fhrqPd/view?usp=share_link)  
 Period: 2015.01 ~ 2022.12  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
@@ -61,6 +63,7 @@ Training with default configurations
 # feature aggregation
 python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=DAN
 python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=CVR
+python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=SMVCNN -SMVCNN_USE_EMBED
 
 # soft label
 python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=HPIQ
