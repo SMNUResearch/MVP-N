@@ -68,7 +68,7 @@ def get_time(model_stage1, model_stage2, inputs, repetition):
             start = torch.cuda.Event(enable_timing=True)
             end = torch.cuda.Event(enable_timing=True)
             start.record()
-            outputs, features = model_stage2(1, inputs.shape[0], [inputs.shape[0]], inputs)
+            outputs, features, utilization = model_stage2(1, inputs.shape[0], [inputs.shape[0]], inputs)
             end.record()
             torch.cuda.synchronize()
             current_time = start.elapsed_time(end)
