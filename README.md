@@ -4,6 +4,7 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Update
+- *2023.04.20* New hypergraph-based methods will no longer be summarized here unless explicitly designed for multi-view object classification.
 - *2023.03.15* Fix some bugs. **Please remove the utilization estimation part when measuring the computational efficiency!!!** There is a typo in the caption of Table 4, which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
 - *2023.03.03* Correct the utilization estimation for DAN and CVR.
 - *2023.02.25* Fix some bugs.
@@ -11,7 +12,7 @@ Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 - *2023.02.15* Add HS [[weight]](https://drive.google.com/file/d/1JODvl0oC64aN2clTCErdQz4bnY4Av2wn/view?usp=share_link). Code optimization.
 - *2023.01.25* Add MVFN [[weight]](https://drive.google.com/file/d/1tKUSXcMB5yNraFTm5bbx2__ygk9tbTIW/view?usp=share_link). Code optimization.
 ## Summary of 50 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1NryQBPcvdeOkwGXIsBlHqZ28J-fhrqPd/view?usp=share_link)  
-Period: 2015.01 ~ 2022.12  
+Period: 2015.01 ~ 2023.01  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
 Journals: TPAMI, IJCV, TIP, TNNLS, TMM, TCSVT, TVCG, PR  
 Workshops: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV  
