@@ -4,6 +4,7 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Update
+- *2023.09.10* Fix some bugs. Code optimization.
 - *2023.04.20* New hypergraph-based methods will no longer be summarized here unless explicitly designed for multi-view object classification.
 - *2023.03.15* Fix some bugs. **Please remove the utilization estimation part when measuring the computational efficiency!!!** There is a typo in the caption of Table 4, which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
 - *2023.03.03* Correct the utilization estimation for DAN and CVR.
