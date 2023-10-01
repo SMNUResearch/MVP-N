@@ -4,9 +4,10 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Update
+- *2023.10.01* Fix some bugs. Code optimization.
 - *2023.09.10* Fix some bugs. Code optimization.
 - *2023.04.20* New hypergraph-based methods will no longer be summarized here unless explicitly designed for multi-view object classification.
-- *2023.03.15* Fix some bugs. **Please remove the utilization estimation part when measuring the computational efficiency!!!** There is a typo in the caption of Table 4, which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
+- *2023.03.15* Fix some bugs. There is a typo in the caption of Table 4, which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
 - *2023.03.03* Correct the utilization estimation for DAN and CVR.
 - *2023.02.25* Fix some bugs.
 - *2023.02.22* Add the code for analyzing the utilization of informative views in the multi-view-based feature aggregation. Add SMVCNN [[weight]](https://drive.google.com/file/d/1-OzUCO9K_51wqCkL3Wdd3NXIv1HAYFmg/view?usp=share_link). Code optimization.
