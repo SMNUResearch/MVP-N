@@ -4,7 +4,7 @@
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Notice
 - Related research work published in 2023 is summarized. One paper is added to the list below.
-- Modifications on the summary file: The code of MVT (BMVC 2021) and iMHL (TIP 2018) is released. The code of View-GCN++ (TPAMI 2022) has yet to be released. MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
+- Modifications on the summary file: The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released. The code of View-GCN++ (TPAMI 2022) has yet to be released. MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
 - Related multi-view-based feature aggregation methods for biomedical tasks will not be summarized here.
 - New hypergraph-based methods will no longer be summarized here unless explicitly designed for multi-view object classification.
 - There is a typo in the caption of Table 4 (NeurIPS 2022), which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
