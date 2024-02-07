@@ -1,20 +1,15 @@
-# MVP-N: A Dataset and Benchmark for Real-World Multi-View Object Classification (NeurIPS 2022)
-*This is the official PyTorch implementation.*  
-[[Paper]](https://proceedings.neurips.cc/paper_files/paper/2022/file/819b8452be7d6af1351d4c4f9cbdbd9b-Paper-Datasets_and_Benchmarks.pdf) [[Reviews]](https://openreview.net/forum?id=HYELrdRdJI)
+# MVP-N: A Dataset and Benchmark for Real-World Multi-View Object Classification (NeurIPS 2022) [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2022/file/819b8452be7d6af1351d4c4f9cbdbd9b-Paper-Datasets_and_Benchmarks.pdf) [[Reviews]](https://openreview.net/forum?id=HYELrdRdJI)
+*This is the official PyTorch implementation.*
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
-## Update
-- *2023.10.01* Fix some bugs. Code optimization.
-- *2023.09.10* Fix some bugs. Code optimization.
-- *2023.04.20* New hypergraph-based methods will no longer be summarized here unless explicitly designed for multi-view object classification.
-- *2023.03.15* Fix some bugs. There is a typo in the caption of Table 4, which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
-- *2023.03.03* Correct the utilization estimation for DAN and CVR.
-- *2023.02.25* Fix some bugs.
-- *2023.02.22* Add the code for analyzing the utilization of informative views in the multi-view-based feature aggregation. Add SMVCNN [[weight]](https://drive.google.com/file/d/1-OzUCO9K_51wqCkL3Wdd3NXIv1HAYFmg/view?usp=share_link). Code optimization.
-- *2023.02.15* Add HS [[weight]](https://drive.google.com/file/d/1JODvl0oC64aN2clTCErdQz4bnY4Av2wn/view?usp=share_link). Code optimization.
-- *2023.01.25* Add MVFN [[weight]](https://drive.google.com/file/d/1tKUSXcMB5yNraFTm5bbx2__ygk9tbTIW/view?usp=share_link). Code optimization.
-## Summary of 50 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1NryQBPcvdeOkwGXIsBlHqZ28J-fhrqPd/view?usp=share_link)  
-Period: 2015.01 ~ 2023.01  
+## Notice
+- Related research work published in 2023 is summarized. One paper is added to the list below.
+- Modifications on the summary file: The code of MVT (BMVC 2021) and iMHL (TIP 2018) is released. The code of View-GCN++ (TPAMI 2022) has yet to be released. MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
+- Related multi-view-based feature aggregation methods for biomedical tasks will not be summarized here.
+- New hypergraph-based methods will no longer be summarized here unless explicitly designed for multi-view object classification.
+- There is a typo in the caption of Table 4 (NeurIPS 2022), which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
+## Summary of 51 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1Fm5LAgYxfP_2xqNYz8INy7J2Jz1JW3ZP/view?usp=sharing)
+Period: 2015.01 ~ 2023.12  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
 Journals: TPAMI, IJCV, TIP, TNNLS, TMM, TCSVT, TVCG, PR  
 Workshops: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV  
@@ -43,7 +38,7 @@ Step 3: Unzip data.zip
 unzip data.zip
 ```
 ## Quick Test
-Step 1: Download pretrained weights from [[Google Drive]](https://drive.google.com/uc?export=download&id=1_SroOiy6Y-7OND93WLoa25q6GWjSSsTP)  
+Step 1: Download pretrained weights from [[Google Drive]](https://drive.google.com/file/d/18VNrODK-cDxNpgYsm6DoYWvq7wSKM8pw/view?usp=sharing)  
 Step 2: Place weights.zip in this repository  
 Step 3: Unzip weights.zip  
 ```
