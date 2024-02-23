@@ -1,4 +1,5 @@
 # MVP-N: A Dataset and Benchmark for Real-World Multi-View Object Classification (NeurIPS 2022) [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2022/file/819b8452be7d6af1351d4c4f9cbdbd9b-Paper-Datasets_and_Benchmarks.pdf) [[Reviews]](https://openreview.net/forum?id=HYELrdRdJI)
+# Towards Real-World Multi-View Object Classification: Dataset, Benchmark, and Analysis (TCSVT 2024) [[Paper]](https://ieeexplore.ieee.org/document/10416228) [[Reviews]](https://drive.google.com/file/d/1bElWM0qzlEPEwzTiON5HSXjo1j9WUixG/view?usp=sharing)
 *This is the official PyTorch implementation.*
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
