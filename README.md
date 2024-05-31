@@ -32,9 +32,10 @@ Step 2: Install dependencies
 sh install.sh
 ```
 ## Dataset Preparation
-Step 1: Download data.zip from [[Google Drive]](https://drive.google.com/uc?export=download&id=1rbjFXLtXGYSsgFN2r9AZtWxOVHGF5jAS)  
-Step 2: Place data.zip in this repository  
-Step 3: Unzip data.zip  
+Step 1: Get dataset documentation from [[Google Drive]](https://drive.google.com/file/d/167Om0A5rl7s3yxQLULbbJ7KkRXcgVHbC/view?usp=sharing)  
+Step 2: Download data.zip from [[Google Drive]](https://drive.google.com/uc?export=download&id=1rbjFXLtXGYSsgFN2r9AZtWxOVHGF5jAS)  
+Step 3: Place data.zip in this repository  
+Step 4: Unzip data.zip  
 ```
 unzip data.zip
 ```
