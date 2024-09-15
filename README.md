@@ -3,11 +3,14 @@
 *This is the official PyTorch implementation.*
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
-## Notice
+## Notice Board
 - Related research work published in 2023 is summarized. One paper is added to the list below.
-- Modifications on the summary file: The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released. The code of View-GCN++ (TPAMI 2022) has yet to be released. MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
+- Modifications on the summary file compared to the paper content.
+    - The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released.
+    - The code of View-GCN++ (TPAMI 2022) has yet to be released.
+    - MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
 - Related multi-view-based feature aggregation methods for biomedical tasks will not be summarized here.
-- New hypergraph-based methods will no longer be summarized here unless explicitly designed for multi-view object classification.
+- New hypergraph-based methods and soft label methods published from 2023 will no longer be summarized here unless explicitly designed for multi-view object classification.
 - There is a typo in the caption of Table 4 (NeurIPS 2022), which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
 ## Summary of 51 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1Fm5LAgYxfP_2xqNYz8INy7J2Jz1JW3ZP/view?usp=sharing)
 Period: 2015.01 ~ 2023.12  
@@ -40,7 +43,7 @@ Step 4: Unzip data.zip
 unzip data.zip
 ```
 ## Quick Test
-Step 1: Download pretrained weights from [[Google Drive]](https://drive.google.com/file/d/18VNrODK-cDxNpgYsm6DoYWvq7wSKM8pw/view?usp=sharing)  
+Step 1: Download pretrained weights from [[Google Drive]](https://drive.google.com/file/d/1W1GuSrD2Pb4k292Ag1ntrlm_DtojfA3Y/view?usp=sharing)  
 Step 2: Place weights.zip in this repository  
 Step 3: Unzip weights.zip  
 ```
@@ -69,8 +72,9 @@ python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=CVR
 python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=SMVCNN -SMVCNN_USE_EMBED
 
 # soft label
-python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=HPIQ
 python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=KD
+python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=HPIQ
+python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=HS
 ```
 Training with other configurations
 ```
@@ -80,4 +84,4 @@ python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=CVR -CVR_LAMBDA=0.1 -CVR_K=2
 # soft label
 python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=KD -KD_T=3
 ```
-Details of configurations are provided in `config.py`
+Details of configurations are provided in `config/base.yaml`
