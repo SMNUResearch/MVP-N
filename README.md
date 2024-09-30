@@ -4,19 +4,32 @@
 ## Create issues from this repository
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Notice Board
+- Related research work published in 2024.01 ~ 2024.06 is summarized. Five papers are added to the list below.
+- VSFormer (TVCG 2024) is added to this benchmark.
 - Related research work published in 2023 is summarized. One paper is added to the list below.
 - Modifications on the summary file compared to the paper content.
     - The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released.
-    - The code of View-GCN++ (TPAMI 2022) has yet to be released.
     - MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
 - Related multi-view-based feature aggregation methods for biomedical tasks will not be summarized here.
 - New hypergraph-based methods and soft label methods published from 2023 will no longer be summarized here unless explicitly designed for multi-view object classification.
 - There is a typo in the caption of Table 4 (NeurIPS 2022), which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
-## Summary of 51 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1Fm5LAgYxfP_2xqNYz8INy7J2Jz1JW3ZP/view?usp=sharing)
-Period: 2015.01 ~ 2023.12  
+## Summary of 56 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1vhcg9w-PcUoqTtvd-a608orHqSnYxeVb/view?usp=drive_link)
+Period: 2015.01 ~ 2024.06  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
 Journals: TPAMI, IJCV, TIP, TNNLS, TMM, TCSVT, TVCG, PR  
 Workshops: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV  
+| Year | Conferences | Journals | Workshops |
+|  :--------  |  :-------:  |  :-------:  |  :-------:  |
+| 2015 | 1 | 0 | 0 |
+| 2016 | 2 | 0 | 0 |
+| 2017 | 2 | 1 | 0 |
+| 2018 | 5 | 5 | 1 |
+| 2019 | 7 | 4 | 0 |
+| 2020 | 4 | 2 | 0 |
+| 2021 | 4 | 6 | 0 |
+| 2022 | 2 | 5 | 2 |
+| 2023 | 0 | 1 | 0 |
+| 2024 | 1 | 4 | 0 |
 ## Environment
 Ubuntu 20.04.3 LTS  
 Python 3.8.10  
