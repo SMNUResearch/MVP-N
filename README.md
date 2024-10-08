@@ -5,13 +5,28 @@
 Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 ## Notice Board
 - Related research work published in 2024.01 ~ 2024.06 is summarized. Five papers are added to the list below.
+- The usage of FG3D dataset (TIP 2021) is supported in this repository.
 - VSFormer (TVCG 2024) is added to this benchmark.
 - Related research work published in 2023 is summarized. One paper is added to the list below.
-- Modifications on the summary file compared to the paper content.
-    - The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released.
-    - MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
 - Related multi-view-based feature aggregation methods for biomedical tasks will not be summarized here.
 - New hypergraph-based methods and soft label methods published from 2023 will no longer be summarized here unless explicitly designed for multi-view object classification.
+## Clarification
+- Discussion on the usage of `allow_tf32`.
+  ```
+  torch.backends.cuda.matmul.allow_tf32 = False
+  torch.backends.cudnn.allow_tf32 = False
+  ```
+    - Except for CVR (ICCV 2021), the performance of other methods is almost unaffected.
+    - The performance change for CVR cannot be neglected and may affect its best configuration.
+    - We recommend trying the following configurations to get the best one when doing custom training on the MVP-N dataset.
+    ```
+    -CVR_K=2 -CVR_LAMBDA=1
+    -CVR_K=3 -CVR_LAMBDA=0.5
+    -CVR_K=3 -CVR_LAMBDA=1
+    ```
+- Modifications in the summary file compared to the paper content.
+    - The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released.
+    - MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
 - There is a typo in the caption of Table 4 (NeurIPS 2022), which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
 ## Summary of 56 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1vhcg9w-PcUoqTtvd-a608orHqSnYxeVb/view?usp=drive_link)
 Period: 2015.01 ~ 2024.06  
@@ -92,9 +107,22 @@ python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=HS
 Training with other configurations
 ```
 # feature aggregation
-python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=CVR -CVR_LAMBDA=0.1 -CVR_K=2
+python3 main_multi_view.py -MV_FLAG=TRAIN -MV_TYPE=CVR -CVR_LAMBDA=0.5 -CVR_K=3
 
 # soft label
 python3 main_single_view.py -SV_FLAG=TRAIN -SV_TYPE=KD -KD_T=3
 ```
 Details of configurations are provided in `config/base.yaml`
+## Training (FG3D)
+Step 1: Download FG3D.zip from [[Google Drive]](https://drive.google.com/file/d/1MY6wJldAglCdJr3m7PBQ53PpuNST2nu4/view?usp=sharing)  
+Step 2: Place FG3D.zip in this repository  
+Step 3: Unzip FG3D.zip  
+```
+unzip FG3D.zip
+```
+Step 4: Training with default configurations. Details are provided in `config/FG3D.yaml`
+```
+python3 main_multi_view_FG3D.py -MV_FLAG=TRAIN -MV_TYPE=DAN -NUM_CLASSES=13 -CLASSES=Airplane
+python3 main_multi_view_FG3D.py -MV_FLAG=TRAIN -MV_TYPE=SMVCNN -NUM_CLASSES=20 -CLASSES=Car
+python3 main_multi_view_FG3D.py -MV_FLAG=TRAIN -MV_TYPE=VSF -NUM_CLASSES=33 -CLASSES=Chair
+```
