@@ -28,6 +28,7 @@ Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
     - The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released.
     - MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
 - There is a typo in the caption of Table 4 (NeurIPS 2022), which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
+- There is a typo in the second row of TABLE VII (TCSVT 2024), which should be corrected as '**97.97**'.
 ## Summary of 56 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1vhcg9w-PcUoqTtvd-a608orHqSnYxeVb/view?usp=drive_link)
 Period: 2015.01 ~ 2024.06  
 Conferences: NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, MM, WACV, BMVC, ACCV  
