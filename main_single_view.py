@@ -2,7 +2,6 @@ import os
 import sys
 import torch
 import random
-import warnings
 import numpy as np
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
@@ -10,7 +9,6 @@ from termcolor import cprint
 from torch.utils.data import DataLoader
 
 sys.dont_write_bytecode = True
-warnings.filterwarnings('ignore')
 
 import utils.tool as tool
 import utils.parser as parser
