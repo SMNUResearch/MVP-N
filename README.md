@@ -7,8 +7,8 @@ Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
   *A1: Yes. We highly welcome its use for other tasks, but please note that it is for non-commercial purposes only.*
 - *Q2: How often will this benchmark (including the summary list) be updated?*  
   *A2: We will update it once every quarter.*
-- *Q3: As of 2025.09 (Q3), which method is the latest baseline?*  
-  *A3: The latest baseline is VSFormer (TVCG 2024). Researchers/Reviewers can use this as a reference. If you have any questions or concerns, please contact us.*
+- *Q3: Which method is the latest baseline?*  
+  *A3: As of 2025.09 (Q3), the latest baseline is VSFormer (TVCG 2024). Researchers/Reviewers can use this as a reference. If you have any questions or concerns, please contact us.*
 ## Notice Board
 - Related research work published in 2025.01 ~ 2025.09 is summarized. One paper is added to the list below.
 - Related research work published in 2024 is summarized. Seven papers are added to the list below.
