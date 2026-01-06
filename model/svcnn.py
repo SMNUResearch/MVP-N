@@ -14,8 +14,8 @@ class SVCNN(nn.Module):
 
         self.net.fc = nn.Linear(self.feature_dim, self.num_classes)
 
-    def forward(self, x, feature=False):
-        if feature == False:
+    def forward(self, x, use_feature=False):
+        if use_feature == False:
             return self.net(x)
         else:
             features = nn.Sequential(*list(self.net.children())[:-1])(x)
