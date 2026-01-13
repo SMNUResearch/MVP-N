@@ -10,7 +10,7 @@ from torch.backends.cuda import matmul
 from torch.utils.data import DataLoader
 from termcolor import cprint
 
-sys.dont_write_bytecode = True
+sys.dont_write_bytecode = True # pylint: disable=wrong-import-position
 
 from utils import tool
 from utils import parser
