@@ -10,6 +10,8 @@ from torch.backends.cuda import matmul
 from torch.utils.data import DataLoader
 from termcolor import cprint
 
+sys.dont_write_bytecode = True
+
 from utils import tool
 from utils import parser
 from utils.loss import LabelCrossEntropy, KDLoss, SoftBootstrapping, HardBootstrapping
@@ -19,8 +21,6 @@ from model.svcnn import SVCNN
 from dataset.dataset_single_view import SingleViewDataset
 from dataset.dataset_multi_view import MultiViewDataset
 from engine.engine_single_view import SingleViewEngine
-
-sys.dont_write_bytecode = True
 
 if __name__ == '__main__':
     # set options
