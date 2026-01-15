@@ -153,8 +153,8 @@ FEATURE_AGGREGATION_INFO:
         DAN_NUM_HEADS_F: 1
         DAN_INNER_DIM_F: 2048
         DAN_DROPOUT_F: 0.1
-        CVR_K: 3 # options: [2, 3, 4]
-        CVR_LAMBDA: 1.0 # options: [0.1, 0.5, 1]
+        CVR_K: 2 # options: [2, 3, 4]
+        CVR_LAMBDA: 0.1 # options: [0.1, 0.5, 1]
         CVR_NUM_HEADS_F: 8
         CVR_INNER_DIM_F: 2048
         CVR_NORM_EPS_F: 0.000001 # 1e-6
