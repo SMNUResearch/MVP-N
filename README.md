@@ -10,6 +10,7 @@ Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 - *Q3: Which method is the latest baseline?*  
   *A3: As of 2025.09 (Q3), the latest baseline is VSFormer (TVCG 2024). Researchers/Reviewers can use this as a reference. If you have any questions or concerns, please contact us.*
 ## Notice Board
+- A cleaner version has been updated using Pyright, Pylint, and Semgrep for code analysis and refactoring.
 - Related research work published in 2025.01 ~ 2025.09 is summarized. One paper is added to the list below.
 - Related research work published in 2024 is summarized. Seven papers are added to the list below.
 - VSFormer (TVCG 2024) is added to this benchmark.
@@ -17,22 +18,25 @@ Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
 - Related multi-view-based feature aggregation methods for biomedical tasks will not be summarized here.
 - New hypergraph-based methods and soft label methods published from 2023 will no longer be summarized here unless explicitly designed for multi-view object classification.
 ## Clarification
-- Discussion on the usage of `allow_tf32`.
+- Since the CVR performance on MVP-N was previously unsatisfactory, we re-examined our code and identified an implementation bug in the reproduction process. This issue has now been fixed, the corresponding weight file has been uploaded, and the updated results are shown below.
+  ```
+  MVA (%): 79.95 ---> 86.58 (Validation)
+  MVA (%): 79.99 ---> 86.64 (Test)
+  ```
+- Changing the batch size during the test will yield different results using the NVIDIA GeForce RTX 3090 GPU. Three solutions are provided.  
+    ▸ Solution 1: torch.set_default_dtype(torch.float64)  
+    ▸ Solution 2: matmul.allow_tf32 = False; cudnn.allow_tf32 = False;  
+    ▸ Solution 3: cudnn.enabled = False  
+  Discussion on the usage of `allow_tf32`.
   ```
   torch.backends.cuda.matmul.allow_tf32 = False
   torch.backends.cudnn.allow_tf32 = False
   ```
-    - Except for CVR (ICCV 2021), the performance of other methods is almost unaffected.
-    - The performance change for CVR cannot be neglected and may affect its best configuration.
-    - We recommend trying the following configurations to get the best one when doing custom training on the MVP-N dataset.
-    ```
-    -CVR_K=2 -CVR_LAMBDA=1
-    -CVR_K=3 -CVR_LAMBDA=0.5
-    -CVR_K=3 -CVR_LAMBDA=1
-    ```
-- Modifications in the summary file compared to the paper content.
-    - The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released.
-    - MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
+    ▸ Except for CVR (ICCV 2021), the performance of other methods is almost unaffected.  
+    ▸ The performance change for CVR cannot be neglected and may affect its best configuration.  
+- Modifications in the summary file compared to the paper content.  
+    ▸ The codes of MVT (BMVC 2021) and iMHL (TIP 2018) are released.  
+    ▸ MVT (BMVC 2021) satisfies P1 by analyzing its open-source implementation.
 - There is a typo in the caption of Table 4 (NeurIPS 2022), which should be corrected as 'Backbone (ResNet-18): 11.20 M, **10.91 G**, and 6.19 ± 0.05 ms'.
 - There is a typo in the second row of TABLE VII (TCSVT 2024), which should be corrected as '**97.97**'.
 ## Summary of 59 multi-view-based feature aggregation methods [[Details]](https://drive.google.com/file/d/1XJ7l5Cv-Ej3xgOM3PVCjalswt-vPZofq/view?usp=drive_link)
@@ -79,7 +83,7 @@ Step 4: Unzip data.zip
 unzip data.zip
 ```
 ## Quick Test
-Step 1: Download pretrained weights from [[Google Drive]](https://drive.google.com/file/d/1W1GuSrD2Pb4k292Ag1ntrlm_DtojfA3Y/view?usp=sharing)  
+Step 1: Download pretrained weights from [[Google Drive]](https://drive.google.com/file/d/1WuH2Wzct-UQDuyK2mWn4DamhOfyk0oQe/view?usp=drive_link)  
 Step 2: Place weights.zip in this repository  
 Step 3: Unzip weights.zip  
 ```
