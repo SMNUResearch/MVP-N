@@ -17,7 +17,7 @@ class MVCNNNew(nn.Module):
             z = y[count:(count + max_num_views), :, :, :]
             count += max_num_views
             z = z[0:num_views[i], :, :, :]
-            z = z.view((int(z.shape[0] / num_views[i]), num_views[i], z.shape[-3], z.shape[-2], z.shape[-1]))
+            z = z.view(z.shape[0] // int(num_views[i]), num_views[i], z.shape[-3], z.shape[-2], z.shape[-1])
 
             if use_utilization:
                 utilization = torch.zeros(max_num_views)
