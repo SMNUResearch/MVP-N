@@ -30,7 +30,7 @@ class SMVCNN(nn.Module):
             count += max_num_views
             z = z[0:num_views[i], :, :, :]
             attention = self.upsampling(self.relu(self.downsampling(z)))
-            z = z.view((int(z.shape[0] / num_views[i]), num_views[i], z.shape[-3], z.shape[-2], z.shape[-1]))
+            z = z.view(z.shape[0] // int(num_views[i]), num_views[i], z.shape[-3], z.shape[-2], z.shape[-1])
             B, V, C, H, W = z.shape
             attention = F.softmax(attention.view(B, V, C, H, W), dim=1)
 
