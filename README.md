@@ -11,6 +11,11 @@ Please contact us at wangren@snu.ac.kr. We will reply the issue within 3 days.
   *A3: As of 2025.09 (Q3), the latest baseline is VSFormer (TVCG 2024). Researchers/Reviewers can use this as a reference. If you have any questions or concerns, please contact us.*
 ## Notice Board
 - A cleaner version has been updated using Pyright, Pylint, and Semgrep for code analysis and refactoring.
+  ```
+  pyright MVP-N/
+  pylint MVP-N/ --disable=line-too-long,trailing-newlines,missing-module-docstring,missing-class-docstring,missing-function-docstring,consider-using-f-string,invalid-name,too-many-instance-attributes,too-many-arguments,too-many-locals,too-many-statements,duplicate-code,no-member,too-many-branches,too-few-public-methods
+  semgrep --config=auto MVP-N/
+  ```
 - Related research work published in 2025.01 ~ 2025.09 is summarized. One paper is added to the list below.
 - Related research work published in 2024 is summarized. Seven papers are added to the list below.
 - VSFormer (TVCG 2024) is added to this benchmark.
